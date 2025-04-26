@@ -47,6 +47,9 @@ public class Constants {
 	public static final String SPACESHIP_URL = "resources/images/shuttle.png";
 	public static final String LIGHT_URL = "resources/images/light.png";
 	public static final String LASER_LINE_URL = "resources/images/laserline.png";
+	public static final String SPACE_BG_URL = "resources/images/space_bg.png";
+	public static final String ENEMY_SHIP_URL = "resources/images/spaceship.png";
+	
 
 	// we should get 240 FPS
 	public static final int GAME_SPEED = 4;
