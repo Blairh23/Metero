@@ -25,8 +25,14 @@ public class ImageFactory {
 		case BACKGROUND:
 			imageIcon = new ImageIcon(Constants.BACKGROUND_IMAGE_URL);
 			break;
+		case SPACE_BACKGROUND:
+			imageIcon = new ImageIcon(Constants.SPACE_BG_URL);
+			break;
 		case SPACESHIP:
 			imageIcon = new ImageIcon(Constants.SPACESHIP_URL);
+			break;
+		case ENEMYSHIP:
+			imageIcon = new ImageIcon(Constants.ENEMY_SHIP_URL);
 			break;
 		default:
 			return null;

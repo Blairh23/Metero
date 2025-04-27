@@ -14,7 +14,8 @@ public class GameMainFrame extends JFrame {
 
 	private void initializeLayout() {
 		
-		add(new GamePanel());
+		//add(new GamePanel());
+		add(new GameSpacePanel());
 		
 		pack();
 		

@@ -39,6 +39,16 @@ public class Constants {
 	public static final int LASER_LINE_VERTICAL_MOVEMENT = 2;
 	public static final int LASER_LINE_WIDTH = 600;
 	public static final int LASER_LINE_HEIGHT = 11;
+	
+	//enemy ship parameters
+	public static final int ENEMY_SHIPS_HEIGHT = 24;
+	public static final int ENEMY_SHIPS_WIDTH = 32;
+	public static final int ENEMY_SHIPS_PADDING = 50;
+	public static final int ENEMY_SHIPS_ROW = 2;
+	public static final int ENEMY_SHIPS_COLUMN = 3;
+	public static final int ENEMY_SHIPS_INIT_X = BOARD_WIDTH / 2  - (ENEMY_SHIPS_WIDTH + ENEMY_SHIPS_PADDING + (ENEMY_SHIPS_WIDTH /2));
+	public static final int ENEMY_SHIPS_INIT_Y = 100;
+	
 
 	// images for the objects
 	public static final String METEOR_IMAGE_URL = "resources/images/meteor.png";
