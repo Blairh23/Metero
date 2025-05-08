@@ -7,9 +7,14 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 import com.globalsoftwaresupport.ui.GameMainFrame;
 
-public class App {
+public class App implements Runnable {
 
 	public static void main(String[] args) {
+		
+		//threads
+		App obj = new App();
+		Thread thread = new Thread(obj);
+		thread.start();
 		
 		try {
 			UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
@@ -26,5 +31,10 @@ public class App {
 		EventQueue.invokeLater(() -> {
 			new GameMainFrame();
 		});
+	}
+
+	@Override
+	public void run() {
+			System.out.println("task 2");	
 	}
 }

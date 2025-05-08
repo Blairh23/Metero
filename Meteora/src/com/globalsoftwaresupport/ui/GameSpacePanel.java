@@ -40,7 +40,7 @@ public class GameSpacePanel extends JPanel {
 		private void initializeVariables() {
 			this.Space_Image = ImageFactory.createImage(ImageType.SPACE_BACKGROUND).getImage();
 			this.enemyShips = new ArrayList<>();
-			System.out.println(Constants.ENEMY_SHIPS_INIT_X);
+			//System.out.println(Constants.ENEMY_SHIPS_INIT_X);
 			
 		}
 		

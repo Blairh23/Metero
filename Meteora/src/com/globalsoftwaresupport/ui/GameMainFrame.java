@@ -8,6 +8,11 @@ import com.globalsoftwaresupport.image.ImageType;
 
 public class GameMainFrame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public GameMainFrame() {
 		initializeLayout();
 	}
