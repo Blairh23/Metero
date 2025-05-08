@@ -1,11 +1,13 @@
 package com.globalsoftwaresupport.app;
 
 import java.awt.EventQueue;
+import java.util.Timer;
 
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 import com.globalsoftwaresupport.ui.GameMainFrame;
+import com.globalsoftwaresupport.ui.GameTimers;
 
 public class App implements Runnable {
 
@@ -15,7 +17,7 @@ public class App implements Runnable {
 		App obj = new App();
 		Thread thread = new Thread(obj);
 		thread.start();
-		
+			
 		try {
 			UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
 		} catch (ClassNotFoundException e) {
@@ -35,6 +37,10 @@ public class App implements Runnable {
 
 	@Override
 	public void run() {
-			System.out.println("task 2");	
+		Timer timer = new Timer();
+		GameTimers task = new GameTimers();
+			
+		timer.schedule(task, 1000, 3000);
+							
 	}
 }
