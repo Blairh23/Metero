@@ -6,11 +6,11 @@ public class GameTimerTaskScheduler {
 	
 	private Timer timer = new Timer();
 	
-	public void scheduleTask(GameTimers task, long delay, long period) {
+	public void scheduleTask(GameTimer task, long delay, long period) {
 		timer.schedule(task, delay, period);
 	}
 	
-	public void scheduleOneTimeTask(GameTimers task, long delay, long period) {
+	public void scheduleOneTimeTask(GameTimer task, long delay, long period) {
 		timer.schedule(task,delay, period);
 	}
 	

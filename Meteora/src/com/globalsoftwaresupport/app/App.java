@@ -7,7 +7,8 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 import com.globalsoftwaresupport.ui.GameMainFrame;
-import com.globalsoftwaresupport.ui.GameTimers;
+import com.globalsoftwaresupport.ui.GameTimer;
+
 
 public class App implements Runnable {
 
@@ -38,7 +39,7 @@ public class App implements Runnable {
 	@Override
 	public void run() {
 		Timer timer = new Timer();
-		GameTimers task = new GameTimers();
+		GameTimer task = new GameTimer();
 			
 		timer.schedule(task, 1000, 3000);
 							
